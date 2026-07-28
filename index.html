@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="robots" content="noindex, nofollow">
   <title>Myrtha Studio — Květinářství Blansko | Svatební a smuteční floristika</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -311,6 +312,15 @@ document.addEventListener('DOMContentLoaded', async function() {
     // preserve ordering (React before ReactDOM before Babel before text/babel).
     const doc = new DOMParser().parseFromString(template, 'text/html');
     document.documentElement.replaceWith(doc.documentElement);
+
+    // The swap above discards the shell's <head>, including its robots meta.
+    // Re-add it so crawlers that render JS still see noindex in the final DOM.
+    if (!document.querySelector('meta[name="robots"]')) {
+      const robots = document.createElement('meta');
+      robots.name = 'robots';
+      robots.content = 'noindex, nofollow';
+      document.head.appendChild(robots);
+    }
 
     // Resolve page-frame markers: mint this document's own blob for each
     // framed page — from local text when this is the root, otherwise by
