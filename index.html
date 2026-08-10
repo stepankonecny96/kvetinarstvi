@@ -55,7 +55,8 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   .photo-row{grid-template-columns:1fr !important;}
   .h2{font-size:30px !important;}
   .h1x{font-size:36px !important;}
-  .hero-full{height:320px !important;}
+  .hero-full{width:100% !important;margin:0 !important;max-width:none !important;aspect-ratio:3 / 4 !important;height:auto !important;max-height:none !important;border-radius:0 !important;}
+  .hero-text{padding:0 16px 54px !important;}
   .hero-h{font-size:32px !important;}
 }</style>
 <script type="application/ld+json">
@@ -82,19 +83,24 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
 </div>
 
 <main>
-<header class="hero-full" style="position:relative;height:min(56.25vw,calc(100vh - 120px));overflow:hidden;background:#f3ece7;">
-  <img class="hs" src="foto/obchod-07.webp" alt="Interiér prodejny s hortenziemi a květinovými dekoracemi" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease;opacity:1;">
-  <img class="hs" data-src="foto/obchod-08.webp" alt="Vstup do květinářství Myrtha Studio na Dvorské ulici v Blansku" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease;opacity:0;">
-  <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:10px;z-index:2;">
+<header class="hero-full" style="position:relative;width:calc(100% - 48px);max-width:1240px;margin:24px auto 0;aspect-ratio:3 / 2;max-height:calc(100vh - 160px);overflow:hidden;background:#f3ece7;border-radius:2px;">
+  <img class="hs" src="foto/obchod-07.webp" width="2200" height="1650" alt="Interiér prodejny s hortenziemi a květinovými dekoracemi" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%;transition:opacity 1.4s ease;opacity:1;">
+  <img class="hs" data-src="foto/obchod-08.webp" width="2200" height="1650" alt="Vstup do květinářství Myrtha Studio na Dvorské ulici v Blansku" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 58%;transition:opacity 1.4s ease;opacity:0;">
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.72),rgba(58,47,43,0.15) 55%,rgba(58,47,43,0.05));"></div>
+  <div class="hero-text" style="position:absolute;left:0;right:0;bottom:0;max-width:1040px;margin:0 auto;padding:0 32px 62px;z-index:2;">
+    <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#F0DCD8;margin-bottom:14px;">Květinářství Blansko</div>
+    <h1 class="hero-h" style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:500;line-height:1.12;color:#FAF6F2;margin:0 0 16px;text-shadow:0 1px 24px rgba(35,25,22,0.35);">Vážeme s láskou v&nbsp;srdci Blanska</h1>
+    <p style="font-size:16px;font-weight:300;line-height:1.7;color:rgba(250,246,242,0.92);margin:0 0 24px;max-width:460px;">Svatební floristika, smuteční vazby i sezónní dekorace.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;">
+      <a href="tel:+420607719780" class="btn-lg">☏ 607 719 780</a>
+      <a href="#sluzby" style="display:inline-block;border:1px solid rgba(250,246,242,0.75);color:#FAF6F2;padding:13px 26px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none;border-radius:2px;">Naše služby</a>
+    </div>
+  </div>
+  <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:10px;z-index:3;">
     <button class="hdot" onclick="heroGo(0)" aria-label="Fotografie 1" style="width:9px;height:9px;padding:0;border:none;border-radius:50%;cursor:pointer;box-shadow:0 0 0 2px rgba(250,246,242,0.65);background:#a86464;"></button>
     <button class="hdot" onclick="heroGo(1)" aria-label="Fotografie 2" style="width:9px;height:9px;padding:0;border:none;border-radius:50%;cursor:pointer;box-shadow:0 0 0 2px rgba(250,246,242,0.65);background:rgba(58,47,43,0.3);"></button>
   </div>
 </header>
-<div style="max-width:1040px;margin:0 auto;padding:52px 32px 64px;">
-  <h1 class="hero-h" style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;line-height:1.15;color:#3a2f2b;margin:0 0 14px;">Vážeme s láskou v&nbsp;srdci Blanska</h1>
-  <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 18px;max-width:520px;">Svatební floristika, smuteční vazby i sezónní dekorace.</p>
-  <a href="tel:+420607719780" class="tel">☏ 607 719 780</a>
-</div>
 
 <section id="sluzby" class="sec-pad" style="background:#ffffff;padding:88px 32px;">
   <div style="max-width:1040px;margin:0 auto;">
