@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF6F2">
 <title>Rozvoz květin Blansko a okolí | Myrtha Studio</title>
 <meta name="description" content="Doručíme čerstvé květiny v Blansku a okolí k narozeninám, výročí i jen tak pro radost. Po Blansku zdarma u kytic nad 500 Kč. Tel. 607 719 780.">
 <meta name="robots" content="noindex, nofollow">
@@ -11,7 +12,7 @@
 <meta property="og:title" content="Rozvoz květin Blansko a okolí | Myrtha Studio">
 <meta property="og:description" content="Doručíme čerstvé květiny v Blansku a okolí k narozeninám, výročí i jen tak pro radost. Po Blansku zdarma u kytic nad 500 Kč. Tel. 607 719 780.">
 <meta property="og:url" content="https://kvetinarstviblansko.cz/rozvoz-kvetin.html">
-<meta property="og:image" content="https://kvetinarstviblansko.cz/logo.png">
+<meta property="og:image" content="https://kvetinarstviblansko.cz/foto/rozvoz-01-velka.webp">
 <meta property="og:locale" content="cs_CZ">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -31,6 +32,24 @@ html{scroll-behavior:smooth;}
 .ph{position:absolute;inset:0;background:#f3ece7;border:1px dashed #d9bcb6;display:flex;align-items:center;justify-content:center;font-size:13px;color:#a86464;letter-spacing:1px;text-align:center;padding:10px;box-sizing:border-box;}
 .galbtn{width:44px;height:44px;border:1px solid #d9bcb6;background:transparent;color:#a86464;font-size:18px;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;} .galbtn:hover{background:#a86464;color:#FAF6F2;border-color:#a86464;}
 input:focus,textarea:focus{border-color:#a86464 !important;}
+.strip{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;padding:6px 32px 10px;scrollbar-width:none;-ms-overflow-style:none;}
+.strip::-webkit-scrollbar{display:none;}
+.sfoto{position:relative;flex:0 0 auto;height:440px;width:auto;border-radius:16px;overflow:hidden;scroll-snap-align:center;cursor:zoom-in;background:#f3ece7;padding:0;border:none;display:block;}
+.sfoto img{height:100%;width:auto;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.sfoto:hover img{transform:scale(1.06);}
+.sfoto::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.22),rgba(58,47,43,0) 42%);opacity:0;transition:opacity 0.4s ease;}
+.sfoto:hover::after{opacity:1;}
+.arw{width:42px;height:42px;border:1px solid #e0cec8;background:transparent;color:#3a2f2b;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease,color 0.2s ease,border-color 0.2s ease;}
+.arw:hover{background:#a86464;color:#FAF6F2;border-color:#a86464;}
+.lbnav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border:none;border-radius:50%;cursor:pointer;background:rgba(250,246,242,0.14);color:#FAF6F2;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease;}
+.lbnav:hover{background:rgba(250,246,242,0.28);}
+.hlavni{position:relative;display:block;width:100%;padding:0;border:none;background:none;cursor:zoom-in;border-radius:16px;overflow:hidden;}
+.hlavni img{width:100%;height:auto;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.hlavni:hover img{transform:scale(1.04);}
+.hlavni::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.28),rgba(58,47,43,0) 45%);opacity:0;transition:opacity 0.4s ease;pointer-events:none;}
+.hlavni:hover::after{opacity:1;}
+.lupa{position:absolute;right:14px;bottom:14px;width:38px;height:38px;border-radius:50%;background:rgba(250,246,242,0.9);color:#3a2f2b;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(6px);transition:opacity 0.35s ease,transform 0.35s ease;pointer-events:none;}
+.hlavni:hover .lupa{opacity:1;transform:translateY(0);}
 .fbic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:#3a2f2b;border-radius:2px;text-decoration:none;} .fbic:hover{background:#a86464;}
 .igic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:transparent;border:1px solid #3a2f2b;border-radius:2px;text-decoration:none;color:#3a2f2b;} .igic:hover{background:#3a2f2b;color:#FAF6F2;}
 @media (max-width:760px){
@@ -47,16 +66,26 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   .photo-row{grid-template-columns:1fr !important;}
   .h2{font-size:30px !important;}
   .h1x{font-size:36px !important;}
+  .strip{padding:6px 16px 10px !important;gap:14px !important;}
+  .sfoto{height:380px !important;}
+  #lb{padding:16px !important;}
+  .lbnav{width:42px !important;height:42px !important;}
 }</style>
 
+<script type="application/ld+json">
+[{"@context":"https://schema.org","@type":"Service","name":"Rozvoz květin","serviceType":"Rozvoz květin","description":"Doručíme čerstvé květiny v Blansku a okolí k narozeninám, výročí i jen tak pro radost. Po Blansku zdarma u kytic nad 500 Kč. Tel. 607 719 780.","url":"https://kvetinarstviblansko.cz/rozvoz-kvetin.html","areaServed":"Blansko a okolí","provider":{"@type":"Florist","name":"Myrtha Studio","telephone":"+420607719780","address":{"@type":"PostalAddress","streetAddress":"Dvorská 22/1","addressLocality":"Blansko","postalCode":"678 01","addressCountry":"CZ"}}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Úvod","item":"https://kvetinarstviblansko.cz/"},{"@type":"ListItem","position":2,"name":"Rozvoz květin","item":"https://kvetinarstviblansko.cz/rozvoz-kvetin.html"}]}]
+</script>
 </head>
 <body>
 <div style="position:sticky;top:0;z-index:100;background:rgba(250,246,242,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #eee3dd;">
   <div class="nav-in" style="max-width:1040px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;">
-    <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:1px;color:#3a2f2b;text-decoration:none;">MYRTHA STUDIO</a>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:1px;color:#3a2f2b;text-decoration:none;">MYRTHA STUDIO</a>
+      <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" aria-label="Facebook" class="nl" style="display:inline-flex;align-items:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V13h2.7v8h3.4z"></path></svg></a>
+      <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" aria-label="Instagram" class="nl" style="display:inline-flex;align-items:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg></a>
+    </div>
     <nav class="nav-links" style="display:flex;gap:28px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;align-items:center;">
       <a href="index.html#sluzby" class="nl">Služby</a>
-      <a href="index.html#galerie" class="nl">Galerie</a>
       <a href="o-nas.html" class="nl">O nás</a>
       <a href="caste-dotazy.html" class="nl">FAQ</a>
       <a href="index.html#kontakt" class="nl">Kontakt</a>
@@ -83,13 +112,83 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
       <a href="index.html#kontakt" class="tel">Nebo napište přes formulář</a>
     </div>
   </div>
-  <div class="photo-row" style="display:grid;grid-template-columns:1fr;gap:20px;">
-    <div style="height:320px;position:relative;min-width:0;"><div class="ph">foto: kytice k doručení</div></div>
-    <div style="height:320px;position:relative;min-width:0;"><div class="ph">foto: předání kytice</div></div>
+  <div style="min-width:0;">
+    <button onclick="lbOpen(0)" class="hlavni" aria-label="Zvětšit fotografii">
+      <img src="foto/rozvoz-01.webp" alt="Barevná jarní kytice z hortenzie, tulipánů a pryskyřníků" width="1200" height="1500" decoding="async" style="width:100%;height:auto;display:block;">
+      <span class="lupa"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"></path></svg></span>
+    </button>
   </div>
 </main>
+<section style="padding:0 0 88px;">
+  <div style="max-width:1040px;margin:0 auto;padding:0 32px 22px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;">
+    <div>
+      <div style="font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#a86464;margin-bottom:8px;">Galerie</div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;margin:0;color:#3a2f2b;">Kytice, které jsme doručili</h2>
+    </div>
+    <div style="display:flex;gap:10px;flex-shrink:0;">
+      <button class="arw" onclick="stripGo(-1)" aria-label="Posunout doleva"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg></button>
+      <button class="arw" onclick="stripGo(1)" aria-label="Posunout doprava"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+    </div>
+  </div>
+  <div id="strip" class="strip">
+    <button class="sfoto" onclick="lbOpen(1)" aria-label="Zvětšit fotografii 2"><img src="foto/rozvoz-02.webp" width="600" height="800" alt="Doručená jarní kytice z frézií, kopretin a růží" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(2)" aria-label="Zvětšit fotografii 3"><img src="foto/rozvoz-03.webp" width="640" height="800" alt="Luční kytice z chrp, kopretin a lisianthusu" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(3)" aria-label="Zvětšit fotografii 4"><img src="foto/rozvoz-04.webp" width="640" height="800" alt="Velká kytice z hortenzií a růží v pudrových tónech" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(4)" aria-label="Zvětšit fotografii 5"><img src="foto/rozvoz-05.webp" width="640" height="800" alt="Doručovaná kytice z hortenzií, růží a eukalyptu" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(5)" aria-label="Zvětšit fotografii 6"><img src="foto/rozvoz-06.webp" width="601" height="800" alt="Kytice z pivoňkových růží a astilbe" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(6)" aria-label="Zvětšit fotografii 7"><img src="foto/rozvoz-07.webp" width="529" height="800" alt="Kytice z pivoněk a lisianthusu" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(7)" aria-label="Zvětšit fotografii 8"><img src="foto/rozvoz-08.webp" width="533" height="800" alt="Podzimní kytice předávaná v horách" loading="lazy" decoding="async"></button>
+    <button class="sfoto" onclick="lbOpen(8)" aria-label="Zvětšit fotografii 9"><img src="foto/rozvoz-09.webp" width="709" height="795" alt="Menší kytice z anemonek, karafiátů a eukalyptu" loading="lazy" decoding="async"></button>
+  </div>
+</section>
 <footer style="padding:28px 32px;text-align:center;font-size:12px;font-weight:300;color:#6b5d56;letter-spacing:1px;border-top:1px solid #eee3dd;">
   © 2026 Myrtha Studio · Blansko &nbsp;·&nbsp; <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" style="color:#6b5d56;">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" style="color:#6b5d56;">Instagram</a>
 </footer>
+<div id="lb" onclick="lbClose(event)" role="dialog" aria-label="Náhled fotografie" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(35,25,22,0.94);align-items:center;justify-content:center;padding:20px 76px;box-sizing:border-box;">
+  <img id="lbimg" alt="Kytice, zvětšený náhled" style="max-width:100%;max-height:100%;border-radius:6px;">
+  <button class="lbnav" style="left:16px;" onclick="event.stopPropagation();lbGo(-1)" aria-label="Předchozí"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg></button>
+  <button class="lbnav" style="right:16px;" onclick="event.stopPropagation();lbGo(1)" aria-label="Další"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+  <div id="lbpocet" style="position:absolute;left:0;right:0;bottom:22px;text-align:center;color:rgba(250,246,242,0.7);font-size:12px;letter-spacing:2px;">1&thinsp;/&thinsp;9</div>
+</div>
+<script>
+var gFotky=[
+  {v:'foto/rozvoz-01-velka.webp',a:'Barevná jarní kytice z hortenzie, tulipánů a pryskyřníků'},
+  {v:'foto/rozvoz-02-velka.webp',a:'Doručená jarní kytice z frézií, kopretin a růží'},
+  {v:'foto/rozvoz-03-velka.webp',a:'Luční kytice z chrp, kopretin a lisianthusu'},
+  {v:'foto/rozvoz-04-velka.webp',a:'Velká kytice z hortenzií a růží v pudrových tónech'},
+  {v:'foto/rozvoz-05-velka.webp',a:'Doručovaná kytice z hortenzií, růží a eukalyptu'},
+  {v:'foto/rozvoz-06-velka.webp',a:'Kytice z pivoňkových růží a astilbe'},
+  {v:'foto/rozvoz-07-velka.webp',a:'Kytice z pivoněk a lisianthusu'},
+  {v:'foto/rozvoz-08-velka.webp',a:'Podzimní kytice předávaná v horách'},
+  {v:'foto/rozvoz-09-velka.webp',a:'Menší kytice z anemonek, karafiátů a eukalyptu'}];
+var lbI=0, lbEl=document.getElementById('lb');
+function lbPolohuj(){
+  var vh=Math.min(window.innerHeight,900), y;
+  if(window.innerHeight>1200){
+    var ev=window.event, el=(ev&&ev.target&&ev.target.closest)?ev.target.closest('button'):null;
+    y = el ? (el.getBoundingClientRect().top+window.pageYOffset+el.getBoundingClientRect().height/2-vh/2) : (window.pageYOffset+(window.innerHeight-vh)/2);
+  } else {
+    y = window.pageYOffset+(window.innerHeight-vh)/2;
+  }
+  var min=window.pageYOffset, max=window.pageYOffset+window.innerHeight-vh;
+  y = Math.max(0, Math.min(Math.max(min,y), Math.max(min,max)));
+  lbEl.style.position='absolute';lbEl.style.top=y+'px';lbEl.style.left='0';lbEl.style.right='0';lbEl.style.bottom='auto';lbEl.style.height=vh+'px';
+}
+function lbOpen(n){lbI=n;lbUkaz();lbPolohuj();lbEl.style.display='flex';}
+function lbUkaz(){
+  var f=gFotky[lbI], img=document.getElementById('lbimg');
+  img.src=f.v; img.alt=f.a;
+  document.getElementById('lbpocet').innerHTML=(lbI+1)+'&thinsp;/&thinsp;'+gFotky.length;
+}
+function lbGo(d){lbI=(lbI+d+gFotky.length)%gFotky.length;lbUkaz();}
+function lbClose(e){if(e.target.id==='lb'||e.target.id==='lbimg')lbEl.style.display='none';}
+function stripGo(d){var s=document.getElementById('strip');s.scrollLeft+=d*Math.min(s.clientWidth*0.8,700);}
+document.addEventListener('keydown',function(e){
+  if(lbEl.style.display!=='flex')return;
+  if(e.key==='Escape')lbEl.style.display='none';
+  if(e.key==='ArrowLeft')lbGo(-1);
+  if(e.key==='ArrowRight')lbGo(1);
+});
+</script>
 </body>
 </html>

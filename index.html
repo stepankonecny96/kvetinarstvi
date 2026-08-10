@@ -3,16 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FAF6F2">
 <title>Myrtha Studio | Květinářství Blansko, svatební a smuteční floristika</title>
-<meta name="description" content="Květinářství Myrtha Studio v Blansku: svatební floristika, pohřební vazby, sezónní výzdoby interiérů, rozvoz květin a ručně malované obrazy. Dvorská 22/1, Blansko. Tel. 607 719 780.">
-<meta name="keywords" content="květinářství Blansko, svatební kytice, pohřební vazby, věnce, výzdoba interiérů, rozvoz květin, malované obrazy, Myrtha Studio">
+<meta name="description" content="Květinářství Myrtha Studio v Blansku: svatební floristika, smuteční vazby, flowerboxy, věnce, valentýnské kytice, kytice ke Dni matek, velikonoční a podzimní dekorace, rozvoz květin a vánoční dekorace. Dvorská 22/1, Blansko. Tel. 607 719 780.">
+<meta name="keywords" content="květinářství Blansko, svatební kytice, smuteční vazba, flowerbox, věnce na dveře, valentýnská kytice, kytice ke dni matek, velikonoční dekorace, rozvoz květin, vánoční květiny, adventní věnce, Myrtha Studio">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://kvetinarstviblansko.cz/">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="Myrtha Studio | Květinářství Blansko">
-<meta property="og:description" content="Svatební floristika, pohřební vazby, výzdoby interiérů, rozvoz květin a ručně malované obrazy. Dvorská 22/1, Blansko.">
+<meta property="og:description" content="Svatební floristika, smuteční vazby, flowerboxy, věnce, sezónní dekorace a rozvoz květin. Dvorská 22/1, Blansko.">
 <meta property="og:url" content="https://kvetinarstviblansko.cz/">
-<meta property="og:image" content="https://kvetinarstviblansko.cz/logo.png">
+<meta property="og:image" content="https://kvetinarstviblansko.cz/foto/obchod-07.webp">
 <meta property="og:locale" content="cs_CZ">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -28,7 +29,15 @@ html{scroll-behavior:smooth;}
 .btn{background:#a86464;color:#FAF6F2;text-decoration:none;padding:10px 20px;border-radius:2px;} .btn:hover{background:#8a4a4a;}
 .btn-lg{display:inline-block;background:#a86464;color:#FAF6F2;text-decoration:none;padding:14px 28px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;} .btn-lg:hover{background:#8a4a4a;}
 .tel{font-size:14px;color:#3a2f2b;text-decoration:none;} .tel:hover{color:#a86464;}
-.card{display:block;background:#ffffff;padding:36px 30px;text-decoration:none;color:inherit;} .card:hover{background:#FAF6F2;}
+.card{display:block;background:#ffffff;border:1px solid #eee3dd;text-decoration:none;color:inherit;} .card:hover{background:#FAF6F2;}
+.card .obr{position:relative;height:210px;overflow:hidden;background:#f3ece7;}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.card:hover img{transform:scale(1.05);}
+.card .txt{padding:24px 26px 28px;}
+.cta-tile{grid-column:span 2;}
+.cta-tile img{transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.cta-tile:hover img{transform:scale(1.04);}
+.cta-tile{min-height:220px;}
 .ph{position:absolute;inset:0;background:#f3ece7;border:1px dashed #d9bcb6;display:flex;align-items:center;justify-content:center;font-size:13px;color:#a86464;letter-spacing:1px;text-align:center;padding:10px;box-sizing:border-box;}
 .galbtn{width:44px;height:44px;border:1px solid #d9bcb6;background:transparent;color:#a86464;font-size:18px;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;} .galbtn:hover{background:#a86464;color:#FAF6F2;border-color:#a86464;}
 input:focus,textarea:focus{border-color:#a86464 !important;}
@@ -42,24 +51,29 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   .hero-accent{display:none !important;}
   .sec-pad,.page-pad{padding:56px 16px !important;}
   .svc-grid{grid-template-columns:1fr !important;}
-  .gal-page{grid-template-columns:1fr !important;}
-  .gal-cell{height:240px !important;margin-top:0 !important;}
+  .cta-tile{grid-column:auto !important;}
+  .card .obr{height:190px !important;}
   .contact-grid{grid-template-columns:1fr !important;gap:36px !important;}
   .photo-row{grid-template-columns:1fr !important;}
   .h2{font-size:30px !important;}
   .h1x{font-size:36px !important;}
+  .hero-full{height:320px !important;}
+  .hero-h{font-size:32px !important;}
 }</style>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Florist","name":"Myrtha Studio","url":"https://kvetinarstviblansko.cz/","image":"https://kvetinarstviblansko.cz/logo.png","description":"Svatební floristika, pohřební vazby, tématické i sezónní výzdoby interiérů, rozvoz květin, výroba a prodej ručně malovaných obrazů.","telephone":"+420607719780","email":"info@kvetinarstviblansko.cz","address":{"@type":"PostalAddress","streetAddress":"Dvorská 22/1","addressLocality":"Blansko","postalCode":"678 01","addressCountry":"CZ"},"geo":{"@type":"GeoCoordinates","latitude":49.3656053,"longitude":16.6446978},"sameAs":["https://www.facebook.com/MyrthaSTUDIO/","https://www.instagram.com/myrtha_kvetinove_studio/"]}
+{"@context":"https://schema.org","@type":"Florist","name":"Myrtha Studio","url":"https://kvetinarstviblansko.cz/","image":"https://kvetinarstviblansko.cz/logo.png","description":"Svatební floristika, smuteční vazby, flowerboxy, věnce, valentýnské kytice, kytice ke Dni matek, velikonoční, podzimní a vánoční dekorace, rozvoz květin.","telephone":"+420607719780","email":"info@kvetinarstviblansko.cz","address":{"@type":"PostalAddress","streetAddress":"Dvorská 22/1","addressLocality":"Blansko","postalCode":"678 01","addressCountry":"CZ"},"geo":{"@type":"GeoCoordinates","latitude":49.3656053,"longitude":16.6446978},"sameAs":["https://www.facebook.com/MyrthaSTUDIO/","https://www.instagram.com/myrtha_kvetinove_studio/"]}
 </script>
 </head>
 <body>
 <div style="position:sticky;top:0;z-index:100;background:rgba(250,246,242,0.92);backdrop-filter:blur(8px);border-bottom:1px solid #eee3dd;">
   <div class="nav-in" style="max-width:1040px;margin:0 auto;padding:18px 32px;display:flex;align-items:center;justify-content:space-between;">
-    <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:1px;color:#3a2f2b;text-decoration:none;">MYRTHA STUDIO</a>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <a href="index.html" style="font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:1px;color:#3a2f2b;text-decoration:none;">MYRTHA STUDIO</a>
+      <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" aria-label="Facebook" class="nl" style="display:inline-flex;align-items:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V13h2.7v8h3.4z"></path></svg></a>
+      <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" aria-label="Instagram" class="nl" style="display:inline-flex;align-items:center;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg></a>
+    </div>
     <nav class="nav-links" style="display:flex;gap:28px;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;align-items:center;">
       <a href="#sluzby" class="nl">Služby</a>
-      <a href="#galerie" class="nl">Galerie</a>
       <a href="o-nas.html" class="nl">O nás</a>
       <a href="caste-dotazy.html" class="nl">FAQ</a>
       <a href="#kontakt" class="nl">Kontakt</a>
@@ -69,98 +83,117 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
 </div>
 
 <main>
-<header class="hero-grid" style="max-width:1040px;margin:0 auto;padding:64px 32px 80px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;">
-  <div>
-    <h1 style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#3a2f2b;margin:0 0 20px;font-weight:400;font-family:'Work Sans',sans-serif;">Květinářství Blansko</h1>
-    <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 36px;max-width:420px;">Svatební floristika, pohřební vazby i sezónní výzdoby interiérů. Vážeme s láskou v srdci Blanska.</p>
-    <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-      <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" aria-label="Facebook" class="fbic"><svg width="22" height="22" viewBox="0 0 24 24" fill="#FAF6F2"><path d="M13.5 21v-8h2.7l.4-3.2h-3.1V7.7c0-.9.3-1.6 1.6-1.6h1.7V3.2c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.4H7.4V13h2.7v8h3.4z"></path></svg></a>
-      <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" aria-label="Instagram" class="igic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"></circle></svg></a>
-      <a href="tel:+420607719780" class="tel" style="margin-left:6px;">☏ 607 719 780</a>
-    </div>
-  </div>
-  <div style="position:relative;min-width:0;">
-    <div class="hero-accent" style="position:absolute;left:24px;right:-24px;top:24px;height:480px;background:#F0DCD8;border-radius:2px;"></div>
-    <div class="hero-photo" style="position:relative;height:480px;min-width:0;background:#ffffff;border:1px solid #eee3dd;border-radius:2px;display:flex;align-items:center;justify-content:center;">
-      <img src="logo.webp" alt="Myrtha Studio logo" width="990" height="990" fetchpriority="high" style="max-width:88%;max-height:88%;width:auto;height:auto;object-fit:contain;">
-    </div>
+<header class="hero-full" style="position:relative;height:min(56.25vw,calc(100vh - 120px));overflow:hidden;background:#f3ece7;">
+  <img class="hs" src="foto/obchod-07.webp" alt="Interiér prodejny s hortenziemi a květinovými dekoracemi" fetchpriority="high" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease;opacity:1;">
+  <img class="hs" data-src="foto/obchod-08.webp" alt="Vstup do květinářství Myrtha Studio na Dvorské ulici v Blansku" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity 1.4s ease;opacity:0;">
+  <div style="position:absolute;left:0;right:0;bottom:18px;display:flex;justify-content:center;gap:10px;z-index:2;">
+    <button class="hdot" onclick="heroGo(0)" aria-label="Fotografie 1" style="width:9px;height:9px;padding:0;border:none;border-radius:50%;cursor:pointer;box-shadow:0 0 0 2px rgba(250,246,242,0.65);background:#a86464;"></button>
+    <button class="hdot" onclick="heroGo(1)" aria-label="Fotografie 2" style="width:9px;height:9px;padding:0;border:none;border-radius:50%;cursor:pointer;box-shadow:0 0 0 2px rgba(250,246,242,0.65);background:rgba(58,47,43,0.3);"></button>
   </div>
 </header>
+<div style="max-width:1040px;margin:0 auto;padding:52px 32px 64px;">
+  <h1 class="hero-h" style="font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:500;line-height:1.15;color:#3a2f2b;margin:0 0 14px;">Vážeme s láskou v&nbsp;srdci Blanska</h1>
+  <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 18px;max-width:520px;">Svatební floristika, smuteční vazby i sezónní dekorace.</p>
+  <a href="tel:+420607719780" class="tel">☏ 607 719 780</a>
+</div>
 
 <section id="sluzby" class="sec-pad" style="background:#ffffff;padding:88px 32px;">
   <div style="max-width:1040px;margin:0 auto;">
     <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#a86464;margin-bottom:14px;">Co děláme</div>
     <h2 class="h2" style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;margin:0 0 48px;color:#3a2f2b;">Naše služby</h2>
-    <div class="svc-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#eee3dd;border:1px solid #eee3dd;">
+    <div class="svc-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px 20px;">
         <a href="svatebni-floristika.html" class="card">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#a86464;margin-bottom:12px;">01</div>
-          <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Svatební floristika</h3>
-          <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Kytice, korsáže a výzdoba obřadu i hostiny podle vašich představ.</div>
-          <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          <div class="obr"><img src="foto/svatba-10.webp" width="608" height="760" alt="Houpačka zdobená zelení a bílými růžemi" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Svatební floristika</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Kytice, korsáže a výzdoba obřadu i hostiny podle vašich představ.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
         </a>
-        <a href="pohrebni-vazby.html" class="card">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#a86464;margin-bottom:12px;">02</div>
-          <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Pohřební vazby</h3>
-          <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Věnce a smuteční kytice vázané s citem a úctou.</div>
-          <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+        <a href="smutecni-vazba.html" class="card">
+          <div class="obr"><img src="foto/smutecni-vazba-02.webp" width="700" height="933" alt="Smuteční vazba ve tvaru srdce z bílých chryzantém s růžovými růžemi" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Smuteční vazba</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Věnce a smuteční kytice vázané s citem a úctou.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
         </a>
-        <a href="vyzdoby-interieru.html" class="card">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#a86464;margin-bottom:12px;">03</div>
-          <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Výzdoby interiérů</h3>
-          <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Tematické i sezónní dekorace pro domácnosti, firmy a akce.</div>
-          <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+        <a href="valentyn.html" class="card">
+          <div class="obr"><img src="foto/valentyn-05.webp" width="720" height="960" alt="Velká kytice růžových růží" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Valentýn</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Rudé růže a kytice, které vyznají lásku za vás.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
+        </a>
+        <a href="velikonoce.html" class="card">
+          <div class="obr"><img src="foto/velikonoce-02.webp" width="720" height="952" alt="Jarní vazba s hnízdem, vajíčky a kočičkami" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Velikonoce</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Jarní věnce, hnízda a dekorace se zajíčky.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
+        </a>
+        <a href="den-matek.html" class="card">
+          <div class="obr"><img src="foto/matky-01.webp" width="720" height="908" alt="Pestrá kytice se slunečnicemi, jiřinou a karafiáty v kraftovém papíru" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Den matek</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Kytice a flowerboxy, které mamince udělají radost.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
         </a>
         <a href="rozvoz-kvetin.html" class="card">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#a86464;margin-bottom:12px;">04</div>
-          <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Rozvoz květin</h3>
-          <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Doručíme čerstvé květiny v Blansku a okolí.</div>
-          <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          <div class="obr"><img src="foto/rozvoz-01.webp" width="640" height="800" alt="Barevná jarní kytice z hortenzie, tulipánů a pryskyřníků" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Rozvoz květin</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Doručíme čerstvé květiny v Blansku a okolí.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
         </a>
-        <a href="malovane-obrazy.html" class="card">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;color:#a86464;margin-bottom:12px;">05</div>
-          <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Ručně malované obrazy</h3>
-          <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Výroba a prodej originálních maleb. Dárek, který zůstane.</div>
-          <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+        <a href="flowerbox.html" class="card">
+          <div class="obr"><img src="foto/flowerbox-02.webp" width="570" height="760" alt="Flowerbox v pudrové krabici s pivoňkovými růžemi a levandulí" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Flowerbox</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Květiny v ozdobné krabici. Dárek, který vydrží.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
         </a>
-        <div style="background:#F0DCD8;padding:36px 30px;display:flex;flex-direction:column;justify-content:flex-end;">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:#3a2f2b;line-height:1.4;">Máte přání na míru? Ozvěte se nám.</div>
-          <a href="tel:+420607719780" style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;text-decoration:none;margin-top:14px;">Zavolat →</a>
-        </div>
+        <a href="vence.html" class="card">
+          <div class="obr"><img src="foto/venec-01.webp" width="360" height="476" alt="Podzimní věnec ze sušených květin s jeřabinami a jablíčky" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Věnce</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Na dveře i na stůl. Ze sušených květin vydrží roky.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
+        </a>
+        <a href="podzimni-dekorace.html" class="card">
+          <div class="obr"><img src="foto/podzim-01.webp" width="570" height="760" alt="Podzimní aranžmá ve zlaté míse s vřesem, hortenzií a dýní" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Podzimní dekorace</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Vřes, sušené plody a svíčky, které provoní podzim.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
+        </a>
+        <a href="vanocni-kvetiny.html" class="card">
+          <div class="obr"><img src="foto/vanoce-04.webp" width="570" height="760" alt="Adventní věnec ve zlatém provedení se skořicí a sušeným ovocem" loading="lazy" decoding="async"></div>
+          <div class="txt">
+            <h3 style="font-size:16px;font-weight:500;margin:0 0 10px;font-family:'Work Sans',sans-serif;">Vánoční květiny</h3>
+            <div style="font-size:14px;font-weight:300;line-height:1.6;color:#6b5d56;">Adventní věnce, vánoční hvězdy a dekorace, které provoní svátky.</div>
+            <div style="font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:#a86464;margin-top:14px;">Zjistit více →</div>
+          </div>
+        </a>
+        <a href="tel:+420607719780" class="cta-tile" style="position:relative;display:flex;align-items:flex-end;overflow:hidden;text-decoration:none;background:#f3ece7;">
+          <img src="foto/obchod-01.webp" width="1600" height="900" alt="Interiér květinářství Myrtha Studio v Blansku" loading="lazy" decoding="async" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">
+          <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.72),rgba(58,47,43,0.08) 60%);"></div>
+          <div style="position:relative;padding:26px 30px;">
+            <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:#FAF6F2;line-height:1.3;margin-bottom:8px;">Máte přání na míru? Ozvěte se nám.</div>
+            <div style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#F0DCD8;">☏ 607 719 780</div>
+          </div>
+        </a>
     </div>
   </div>
 </section>
 
-<section id="galerie" class="sec-pad" style="padding:88px 32px;">
-  <div style="max-width:1040px;margin:0 auto;">
-    <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#a86464;margin-bottom:14px;">Z naší tvorby</div>
-    <h2 class="h2" style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:500;margin:0 0 48px;color:#3a2f2b;">Galerie</h2>
-    <div style="overflow:hidden;">
-      <div id="gal-track" style="display:flex;transition:transform 0.45s ease;">
-        <div class="gal-page" style="flex:0 0 100%;min-width:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;">
-            <div class="gal-cell" style="height:340px;position:relative;min-width:0;"><div class="ph">foto: svatební kytice</div></div>
-            <div class="gal-cell" style="height:340px;margin-top:32px;position:relative;min-width:0;"><div class="ph">foto: výzdoba interiéru</div></div>
-            <div class="gal-cell" style="height:340px;position:relative;min-width:0;"><div class="ph">foto: malovaný obraz</div></div>
-        </div>
-        <div class="gal-page" style="flex:0 0 100%;min-width:0;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-left:20px;">
-            <div class="gal-cell" style="height:340px;position:relative;min-width:0;"><div class="ph">foto: smuteční vazba</div></div>
-            <div class="gal-cell" style="height:340px;margin-top:32px;position:relative;min-width:0;"><div class="ph">foto: sezónní dekorace</div></div>
-            <div class="gal-cell" style="height:340px;position:relative;min-width:0;"><div class="ph">foto: rozvoz květin</div></div>
-        </div>
-      </div>
-    </div>
-    <div style="display:flex;align-items:center;justify-content:center;gap:20px;margin-top:32px;">
-      <button onclick="galGo(-1)" aria-label="Předchozí fotky" class="galbtn">←</button>
-      <div style="display:flex;gap:8px;align-items:center;">
-        <div id="gd0" style="width:8px;height:8px;border-radius:50%;background:#a86464;"></div>
-        <div id="gd1" style="width:8px;height:8px;border-radius:50%;background:rgba(58,47,43,0.25);"></div>
-      </div>
-      <button onclick="galGo(1)" aria-label="Další fotky" class="galbtn">→</button>
-    </div>
-    <div style="text-align:center;margin-top:44px;">
-      <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" style="font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#3a2f2b;text-decoration:none;border-bottom:1px solid #a86464;padding-bottom:4px;">Více na Instagramu →</a>
-    </div>
-  </div>
-</section>
 
 <section id="kontakt" class="sec-pad" style="background:#F0DCD8;padding:88px 32px;">
   <div class="contact-grid" style="max-width:1040px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:flex-start;">
@@ -181,7 +214,7 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
       </div>
     </div>
     <form action="https://formsubmit.co/info@kvetinarstviblansko.cz" method="POST" style="display:flex;flex-direction:column;gap:14px;background:#ffffff;padding:32px 28px;border-radius:2px;">
-      <div style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:#3a2f2b;margin-bottom:2px;">Napište nám</div>
+      <h3 style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:500;color:#3a2f2b;margin:0 0 2px;">Napište nám</h3>
       <input type="hidden" name="_subject" value="Nová zpráva z webu Myrtha Studio">
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="_honey" style="display:none;">
@@ -205,13 +238,21 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-var gs = 0;
-function galGo(dir){
-  gs = (gs + dir + 2) % 2;
-  document.getElementById('gal-track').style.transform = 'translateX(calc(-' + (gs*100) + '% - ' + (gs*20) + 'px))';
-  document.getElementById('gd0').style.background = gs===0 ? '#a86464' : 'rgba(58,47,43,0.25)';
-  document.getElementById('gd1').style.background = gs===1 ? '#a86464' : 'rgba(58,47,43,0.25)';
+var hsImgs=document.querySelectorAll('.hs'), hsDots=document.querySelectorAll('.hdot'), hsI=0, hsTimer=setInterval(heroDalsi,5000);
+function hsNacti(el){
+  if(el.getAttribute('data-src')){el.src=el.getAttribute('data-src');el.removeAttribute('data-src');}
+  var ch=el.querySelectorAll('[data-src]');
+  for(var i=0;i<ch.length;i++){ch[i].src=ch[i].getAttribute('data-src');ch[i].removeAttribute('data-src');}
 }
+function heroDalsi(){heroShow((hsI+1)%hsImgs.length);}
+function heroShow(n){
+  hsNacti(hsImgs[n]);
+  hsImgs[hsI].style.opacity=0; hsImgs[n].style.opacity=1;
+  hsDots[hsI].style.background='rgba(58,47,43,0.3)'; hsDots[n].style.background='#a86464';
+  hsI=n;
+}
+function heroGo(n){clearInterval(hsTimer);hsTimer=setInterval(heroDalsi,5000);heroShow(n);}
+window.addEventListener('load',function(){setTimeout(function(){var a=document.querySelectorAll('.hero-full [data-src]');for(var i=0;i<a.length;i++){a[i].src=a[i].getAttribute('data-src');a[i].removeAttribute('data-src');}},1200);});
 var pos = [49.3656053, 16.6446978];
 var map = L.map('mapa', {scrollWheelZoom:false}).setView(pos, 16);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {subdomains:'abcd', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
