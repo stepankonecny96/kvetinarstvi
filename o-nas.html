@@ -6,13 +6,13 @@
 <meta name="theme-color" content="#FAF6F2">
 <title>O nás | Myrtha Studio Blansko</title>
 <meta name="description" content="Poznejte Myrtha Studio, květinářství v srdci Blanska. Svatební floristika, smuteční vazby, věnce, sezónní dekorace a rozvoz květin. Dvorská 22/1, Blansko.">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <link rel="canonical" href="https://kvetinarstviblansko.cz/o-nas.html">
 <meta property="og:type" content="business.business">
 <meta property="og:title" content="O nás | Myrtha Studio Blansko">
 <meta property="og:description" content="Poznejte Myrtha Studio, květinářství v srdci Blanska. Svatební floristika, smuteční vazby, věnce, sezónní dekorace a rozvoz květin. Dvorská 22/1, Blansko.">
 <meta property="og:url" content="https://kvetinarstviblansko.cz/o-nas.html">
-<meta property="og:image" content="https://kvetinarstviblansko.cz/logo.png">
+<meta property="og:image" content="https://kvetinarstviblansko.cz/foto/floristka.webp">
 <meta property="og:locale" content="cs_CZ">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
@@ -32,6 +32,31 @@ html{scroll-behavior:smooth;}
 .ph{position:absolute;inset:0;background:#f3ece7;border:1px dashed #d9bcb6;display:flex;align-items:center;justify-content:center;font-size:13px;color:#a86464;letter-spacing:1px;text-align:center;padding:10px;box-sizing:border-box;}
 .galbtn{width:44px;height:44px;border:1px solid #d9bcb6;background:transparent;color:#a86464;font-size:18px;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;} .galbtn:hover{background:#a86464;color:#FAF6F2;border-color:#a86464;}
 input:focus,textarea:focus{border-color:#a86464 !important;}
+.hlavni{position:relative;display:block;width:100%;padding:0;border:none;background:none;cursor:zoom-in;border-radius:16px;overflow:hidden;}
+.hlavni img{width:100%;height:auto;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.hlavni:hover img{transform:scale(1.04);}
+.hlavni::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.28),rgba(58,47,43,0) 45%);opacity:0;transition:opacity 0.4s ease;pointer-events:none;}
+.hlavni:hover::after{opacity:1;}
+.lupa{position:absolute;right:14px;bottom:14px;width:38px;height:38px;border-radius:50%;background:rgba(250,246,242,0.9);color:#3a2f2b;display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(6px);transition:opacity 0.35s ease,transform 0.35s ease;pointer-events:none;}
+.hlavni:hover .lupa{opacity:1;transform:translateY(0);}
+.strip{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x proximity;scroll-behavior:smooth;padding:6px 32px 10px;scrollbar-width:none;-ms-overflow-style:none;}
+.strip::-webkit-scrollbar{display:none;}
+.sfoto{position:relative;flex:0 0 auto;height:440px;width:auto;border-radius:16px;overflow:hidden;scroll-snap-align:center;cursor:zoom-in;background:#f3ece7;padding:0;border:none;display:block;}
+.sfoto img{height:100%;width:auto;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.sfoto:hover img{transform:scale(1.06);}
+.sfoto::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(58,47,43,0.22),rgba(58,47,43,0) 42%);opacity:0;transition:opacity 0.4s ease;}
+.sfoto:hover::after{opacity:1;}
+.arw{width:42px;height:42px;border:1px solid #e0cec8;background:transparent;color:#3a2f2b;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease,color 0.2s ease,border-color 0.2s ease;}
+.arw:hover{background:#a86464;color:#FAF6F2;border-color:#a86464;}
+.lbnav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border:none;border-radius:50%;cursor:pointer;background:rgba(250,246,242,0.14);color:#FAF6F2;display:flex;align-items:center;justify-content:center;transition:background 0.2s ease;}
+.lbnav:hover{background:rgba(250,246,242,0.28);}
+.gal3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.gcell{position:relative;padding:0;border:none;background:#f3ece7;border-radius:16px;overflow:hidden;cursor:zoom-in;aspect-ratio:3 / 4;display:block;}
+.gcell img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.8s cubic-bezier(.2,.7,.2,1);}
+.gcell:hover img{transform:scale(1.06);}
+.fakt{display:flex;flex-direction:column;gap:6px;}
+.fakt-n{font-family:'Cormorant Garamond',serif;font-size:38px;line-height:1;color:#a86464;}
+.fakt-t{font-size:13px;font-weight:300;color:#6b5d56;line-height:1.5;}
 .fbic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:#3a2f2b;border-radius:2px;text-decoration:none;} .fbic:hover{background:#a86464;}
 .igic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;background:transparent;border:1px solid #3a2f2b;border-radius:2px;text-decoration:none;color:#3a2f2b;} .igic:hover{background:#3a2f2b;color:#FAF6F2;}
 @media (max-width:760px){
@@ -46,12 +71,16 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   .gal-cell{height:240px !important;margin-top:0 !important;}
   .contact-grid{grid-template-columns:1fr !important;gap:36px !important;}
   .photo-row{grid-template-columns:1fr !important;}
+  .gal3{grid-template-columns:1fr !important;gap:14px !important;}
+  .fakty{grid-template-columns:1fr 1fr !important;gap:24px !important;}
+  #lb{padding:16px !important;}
+  .lbnav{width:42px !important;height:42px !important;}
   .h2{font-size:30px !important;}
   .h1x{font-size:36px !important;}
 }</style>
 
 <script type="application/ld+json">
-[{"@context":"https://schema.org","@type":"AboutPage","name":"O nás | Myrtha Studio","url":"https://kvetinarstviblansko.cz/o-nas.html","about":{"@type":"Florist","name":"Myrtha Studio","alternateName":"Květinářství Myrtha","telephone":"+420607719780","email":"info@kvetinarstviblansko.cz","address":{"@type":"PostalAddress","streetAddress":"Dvorská 22/1","addressLocality":"Blansko","postalCode":"678 01","addressCountry":"CZ"}}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Úvod","item":"https://kvetinarstviblansko.cz/"},{"@type":"ListItem","position":2,"name":"O nás","item":"https://kvetinarstviblansko.cz/o-nas.html"}]}]
+[{"@context":"https://schema.org","@type":"AboutPage","name":"O nás | Myrtha Studio","url":"https://kvetinarstviblansko.cz/o-nas.html","about":{"@type":"Florist","name":"Myrtha Studio","alternateName":"Květinářství Myrtha","telephone":"+420607719780","email":"info@kvetinarstviblansko.cz","address":{"@type":"PostalAddress","streetAddress":"Dvorská 22/1","addressLocality":"Blansko","postalCode":"678 01","addressCountry":"CZ"},"foundingDate":"2017-09-29","image":"https://kvetinarstviblansko.cz/foto/floristka.webp"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Úvod","item":"https://kvetinarstviblansko.cz/"},{"@type":"ListItem","position":2,"name":"O nás","item":"https://kvetinarstviblansko.cz/o-nas.html"}]}]
 </script>
 </head>
 <body>
@@ -76,16 +105,63 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   <div>
     <div style="font-size:12px;letter-spacing:3px;text-transform:uppercase;color:#a86464;margin-bottom:14px;">Květinářství v srdci Blanska</div>
     <h1 class="h1x" style="font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:500;line-height:1.1;margin:0 0 24px;color:#3a2f2b;">O nás</h1>
-    <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 28px;">Myrtha Studio je květinářství na Dvorské ulici v Blansku. Vážeme kytice pro radost i pro rozloučení, zdobíme svatby a interiéry a čerstvé květiny rozvezeme po Blansku i okolí.</p>
+    <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 18px;">Myrtha Studio je květinářství na Dvorské ulici v Blansku. Otevřeli jsme 29. září 2017 a od té doby vážeme kytice pro radost i pro rozloučení, zdobíme svatby a interiéry a čerstvé květiny rozvezeme po Blansku i okolí.</p>
+    <p style="font-size:16px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 28px;">Za vazbou stojí floristka s pětadvaceti lety praxe v oboru. Každou kytici vážeme ručně a skládáme ji podle toho, komu je určená, ne podle šablony. Poradíme s výběrem květin i s tím, co se k dané příležitosti hodí.</p>
+    <div class="fakty" style="display:grid;grid-template-columns:repeat(3,auto);gap:34px;justify-content:start;margin:0 0 32px;">
+      <div class="fakt"><span class="fakt-n">25</span><span class="fakt-t">let praxe<br>v oboru</span></div>
+      <div class="fakt"><span class="fakt-n">2017</span><span class="fakt-t">otevřeno<br>od 29. září</span></div>
+      <div class="fakt"><span class="fakt-n">100&nbsp;%</span><span class="fakt-t">ručně vázané<br>kytice</span></div>
+    </div>
     <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
       <a href="index.html#kontakt" class="btn-lg">Kontaktujte nás</a>
       <a href="tel:+420607719780" class="tel">☏ 607 719 780</a>
     </div>
   </div>
-  <div style="height:420px;position:relative;min-width:0;"><div class="ph">foto: vy / obchod</div></div>
+  <div style="min-width:0;">
+    <div style="border-radius:16px;overflow:hidden;background:#f3ece7;">
+      <img src="foto/floristka.webp" width="750" height="1000" alt="Floristka Myrtha Studia s ručně vázanou kyticí z růží a chrp" fetchpriority="high" decoding="async" style="width:100%;height:auto;display:block;">
+    </div>
+  </div>
 </main>
+<section class="sec-pad" style="max-width:1040px;margin:0 auto;padding:0 32px 88px;">
+  <div style="font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:#a86464;margin-bottom:8px;">Galerie</div>
+  <h2 class="h2" style="font-family:'Cormorant Garamond',serif;font-size:34px;font-weight:500;margin:0 0 8px;color:#3a2f2b;">Náš obchod</h2>
+  <p style="font-size:15px;font-weight:300;line-height:1.7;color:#6b5d56;margin:0 0 28px;max-width:520px;">Kromě řezaných květin u nás najdete i truhlíky, bylinky a rostliny na terasu i zahradu.</p>
+  <div class="gal3">
+    <button class="gcell" onclick="lbOpen(0)" aria-label="Zvětšit fotografii 1"><img src="foto/prodejna-01.webp" width="750" height="1000" alt="Proutěné košíky s rostlinami před vstupem do květinářství" loading="lazy" decoding="async"></button>
+    <button class="gcell" onclick="lbOpen(1)" aria-label="Zvětšit fotografii 2"><img src="foto/prodejna-02.webp" width="451" height="1000" alt="Terasa prodejny s muškáty, levandulí a sukulenty v květináčích" loading="lazy" decoding="async"></button>
+    <button class="gcell" onclick="lbOpen(2)" aria-label="Zvětšit fotografii 3"><img src="foto/prodejna-03.webp" width="750" height="1000" alt="Vavříny a jehličnany v proutěných koších u vstupu do obchodu" loading="lazy" decoding="async"></button>
+  </div>
+</section>
+<div id="lb" onclick="lbClose(event)" role="dialog" aria-label="Náhled fotografie" style="display:none;position:fixed;inset:0;z-index:200;background:rgba(35,25,22,0.94);align-items:center;justify-content:center;padding:20px 76px;box-sizing:border-box;">
+  <img id="lbimg" alt="Prodejna Myrtha Studio, zvětšený náhled" style="max-width:100%;max-height:100%;border-radius:6px;">
+  <button class="lbnav" style="left:16px;" onclick="event.stopPropagation();lbGo(-1)" aria-label="Předchozí"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"></path></svg></button>
+  <button class="lbnav" style="right:16px;" onclick="event.stopPropagation();lbGo(1)" aria-label="Další"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"></path></svg></button>
+  <div id="lbpocet" style="position:absolute;left:0;right:0;bottom:22px;text-align:center;color:rgba(250,246,242,0.7);font-size:12px;letter-spacing:2px;">1&thinsp;/&thinsp;3</div>
+</div>
 <footer style="padding:28px 32px;text-align:center;font-size:12px;font-weight:300;color:#6b5d56;letter-spacing:1px;border-top:1px solid #eee3dd;">
   © 2026 Myrtha Studio · Blansko &nbsp;·&nbsp; <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" style="color:#6b5d56;">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" style="color:#6b5d56;">Instagram</a>
 </footer>
+<script>
+var gFotky=[
+  {v:'foto/prodejna-01-velka.webp',a:'Proutěné košíky s rostlinami před vstupem do květinářství'},
+  {v:'foto/prodejna-02-velka.webp',a:'Terasa prodejny s muškáty, levandulí a sukulenty v květináčích'},
+  {v:'foto/prodejna-03-velka.webp',a:'Vavříny a jehličnany v proutěných koších u vstupu do obchodu'}];
+var lbI=0, lbEl=document.getElementById('lb');
+function lbOpen(n){lbI=n;lbUkaz();lbEl.style.display='flex';}
+function lbUkaz(){
+  var f=gFotky[lbI], img=document.getElementById('lbimg');
+  img.src=f.v; img.alt=f.a;
+  document.getElementById('lbpocet').innerHTML=(lbI+1)+'&thinsp;/&thinsp;'+gFotky.length;
+}
+function lbGo(d){lbI=(lbI+d+gFotky.length)%gFotky.length;lbUkaz();}
+function lbClose(e){if(e.target.id==='lb'||e.target.id==='lbimg')lbEl.style.display='none';}
+document.addEventListener('keydown',function(e){
+  if(lbEl.style.display!=='flex')return;
+  if(e.key==='Escape')lbEl.style.display='none';
+  if(e.key==='ArrowLeft')lbGo(-1);
+  if(e.key==='ArrowRight')lbGo(1);
+});
+</script>
 </body>
 </html>
