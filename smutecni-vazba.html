@@ -182,38 +182,4 @@ document.addEventListener('keydown',function(e){
 });
 </script>
 </body>
-</htmlvar gFotky=[
-  {v:'foto/smutecni-vazba-02-velka.webp',a:'Smuteční vazba ve tvaru srdce z bílých chryzantém s růžovými růžemi'},
-  {v:'foto/smutecni-vazba-01-velka.webp',a:'Smuteční věnec z pastelových růží a eukalyptu'},
-  {v:'foto/smutecni-vazba-03-velka.webp',a:'Smuteční vazba na rakev z růžových hortenzií, růží a modrých straček'}];
-var lbI=0, lbEl=document.getElementById('lb');
-function lbPolohuj(){
-  var vh=Math.min(window.innerHeight,900), y;
-  if(window.innerHeight>1200){
-    var ev=window.event, el=(ev&&ev.target&&ev.target.closest)?ev.target.closest('button'):null;
-    y = el ? (el.getBoundingClientRect().top+window.pageYOffset+el.getBoundingClientRect().height/2-vh/2) : (window.pageYOffset+(window.innerHeight-vh)/2);
-  } else {
-    y = window.pageYOffset+(window.innerHeight-vh)/2;
-  }
-  var min=window.pageYOffset, max=window.pageYOffset+window.innerHeight-vh;
-  y = Math.max(0, Math.min(Math.max(min,y), Math.max(min,max)));
-  lbEl.style.position='absolute';lbEl.style.top=y+'px';lbEl.style.left='0';lbEl.style.right='0';lbEl.style.bottom='auto';lbEl.style.height=vh+'px';
-}
-function lbOpen(n){lbI=n;lbUkaz();lbPolohuj();lbEl.style.display='flex';}
-function lbUkaz(){
-  var f=svFotky[lbI], img=document.getElementById('lbimg');
-  img.src=f.v; img.alt=f.a;
-  document.getElementById('lbpocet').innerHTML=(lbI+1)+'&thinsp;/&thinsp;'+svFotky.length;
-}
-function lbGo(d){lbI=(lbI+d+svFotky.length)%svFotky.length;lbUkaz();}
-function lbClose(e){if(e.target.id==='lb'||e.target.id==='lbimg')lbEl.style.display='none';}
-function stripGo(d){var s=document.getElementById('strip');s.scrollLeft+=d*Math.min(s.clientWidth*0.8,700);}
-document.addEventListener('keydown',function(e){
-  if(lbEl.style.display!=='flex')return;
-  if(e.key==='Escape')lbEl.style.display='none';
-  if(e.key==='ArrowLeft')lbGo(-1);
-  if(e.key==='ArrowRight')lbGo(1);
-});
-</script>
-</body>
 </html>
