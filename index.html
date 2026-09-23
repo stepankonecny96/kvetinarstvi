@@ -226,7 +226,7 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
         <div>
           <span style="display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#a86464;margin-bottom:8px;">Kde nás najdete</span>
           <div style="border:1px solid #eee3dd;border-radius:2px;overflow:hidden;background:#ffffff;">
-            <div id="mapa" style="width:100%;height:240px;"></div>
+            <iframe src="https://mapy.com/cs/zakladni?frame=1&x=16.6446978&y=49.3656053&z=16&source=coor&id=16.6446978%2C49.3656053" title="Mapa: Květinářství Myrtha Studio, Dvorská 22/1, Blansko" style="display:block;width:100%;height:240px;border:0;" loading="lazy" allowfullscreen></iframe>
           </div>
           <a href="https://mapy.cz/zakladni?q=49.3656053N%2C16.6446978E" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;font-size:13px;">Otevřít v Mapy.cz →</a>
         </div>
@@ -254,8 +254,6 @@ input:focus,textarea:focus{border-color:#a86464 !important;}
   © 2026 Myrtha Studio · Blansko &nbsp;·&nbsp; <a href="https://www.facebook.com/MyrthaSTUDIO/" target="_blank" rel="noopener" style="color:#6b5d56;">Facebook</a> &nbsp;·&nbsp; <a href="https://www.instagram.com/myrtha_kvetinove_studio/" target="_blank" rel="noopener" style="color:#6b5d56;">Instagram</a>
 </footer>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
 var hsImgs=document.querySelectorAll('.hs'), hsDots=document.querySelectorAll('.hdot'), hsI=0, hsTimer=setInterval(heroDalsi,5000);
 function hsNacti(el){
@@ -272,10 +270,6 @@ function heroShow(n){
 }
 function heroGo(n){clearInterval(hsTimer);hsTimer=setInterval(heroDalsi,5000);heroShow(n);}
 window.addEventListener('load',function(){setTimeout(function(){var a=document.querySelectorAll('.hero-full [data-src]');for(var i=0;i<a.length;i++){a[i].src=a[i].getAttribute('data-src');a[i].removeAttribute('data-src');}},1200);});
-var pos = [49.3656053, 16.6446978];
-var map = L.map('mapa', {scrollWheelZoom:false}).setView(pos, 16);
-L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png', {subdomains:'abcd', attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>'}).addTo(map);
-L.marker(pos).addTo(map);
 </script>
 </body>
 </html>
